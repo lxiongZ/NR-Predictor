@@ -1,9 +1,9 @@
 # NR-Predictor
 
-**NR-Predictor: A Hierarchical Framework for Predicting Ligand Binding and Functional Activity of Nuclear Receptors**
+NR-Predictor: A Hierarchical Framework for Predicting Ligand Binding and Functional Activity of Nuclear Receptors
 
 <p align="center">
-  <img src="Picture/2.png" alt="NR-Predictor logo" width="200">
+  <img src="Picture/2.png" alt="NR-Predictor logo" width="900">
 </p>
 
 The web server can be used directly at: https://lmmd.ecust.edu.cn/nrpre/
