@@ -2,20 +2,16 @@
 
 **NR-Predictor: A Hierarchical Framework for Predicting Ligand Binding and Functional Activity of Nuclear Receptors**
 
-NR-Predictor is a hierarchical prediction framework for nuclear receptors. It integrates ligand-binding prediction and downstream functional activity prediction to support systematic assessment of nuclear receptor related compounds.
-
-The web server can be used directly at:
-
-https://lmmd.ecust.edu.cn/nrpre/
-
 <p align="center">
-  <img src="Picture/2.png" alt="NR-Predictor logo" width="500">
+  <img src="Picture/2.png" alt="NR-Predictor logo" width="200">
 </p>
+
+The web server can be used directly at: https://lmmd.ecust.edu.cn/nrpre/
 
 ## Framework
 
 <p align="center">
-  <img src="Picture/1.png" alt="NR-Predictor framework" width="800">
+  <img src="Picture/1.png" alt="NR-Predictor framework" width="900">
 </p>
 
 ## Environment Setup
@@ -61,8 +57,8 @@ Main contents:
 
 - Processed qualitative datasets at 10 uM and 100 uM thresholds.
 - Multi-task quantitative dataset.
-- External validation dataset collected from JMC literature.
-- KNIME processing pipelines used for data cleaning and integration.
+- External validation dataset primarily collected from JMC literature.
+- KNIME processing pipelines used for data cleaning and merging.
 
 ## NR_binder
 
@@ -75,9 +71,9 @@ Run the scripts in this order:
 ```bash
 cd NR_binder
 
-python -u ml_train.py
-python -u gnn_train.py
-python -u ensemble_attention_stacking.py
+python ml_train.py
+python gnn_train.py
+python ensemble_attention_stacking.py
 ```
 
 Workflow:
@@ -92,7 +88,7 @@ After the trained model files are available, run:
 
 ```bash
 cd NR_binder
-python -u predict_binder.py
+python predict_binder.py
 ```
 
 For most users, ligand-binding prediction can also be performed directly through the web server.
@@ -108,9 +104,9 @@ Run the scripts in this order:
 ```bash
 cd "NR_ago&ant"
 
-python -u vina/prepare_ligand.py --smiles_file <task_smiles.txt> --output vina/ligands/<TASK>
-python -u feature.py
-python -u build_models.py
+python vina/prepare_ligand.py --smiles_file <task_smiles.txt> --output vina/ligands/<TASK>
+python feature.py
+python build_models.py
 ```
 
 Workflow:
@@ -125,7 +121,7 @@ After the model files are available, run:
 
 ```bash
 cd "NR_ago&ant"
-python -u predict.py
+python predict.py
 ```
 
 ## Notes
