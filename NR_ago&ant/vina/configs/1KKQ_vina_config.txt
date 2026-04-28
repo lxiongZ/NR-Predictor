@@ -1,0 +1,18 @@
+# AutoDock Vina configuration file
+# Generated from: PDB/PPARA/1KKQ.pdb
+# Ligand: 471 in chain D
+
+receptor = receptor.pdbqt
+ligand = ligand.pdbqt
+
+center_x = -8.051
+center_y = 56.091
+center_z = 59.133
+
+size_x = 26.0
+size_y = 26.4
+size_z = 27.7
+
+exhaustiveness = 8
+num_modes = 9
+energy_range = 3

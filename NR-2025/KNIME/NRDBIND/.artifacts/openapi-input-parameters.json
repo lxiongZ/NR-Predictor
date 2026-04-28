@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "int-input-1710:137": {
+            "type": "integer",
+            "default": 100000,
+            "description": "threshold to discriminate active and inactive compounds in nM",
+            "example": 100000
+        },
+        "int-input-1709:137": {
+            "type": "integer",
+            "default": 10000,
+            "description": "threshold to discriminate active and inactive compounds in nM",
+            "example": 10000
+        }
+    }
+}

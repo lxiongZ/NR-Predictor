@@ -1,0 +1,18 @@
+# AutoDock Vina configuration file
+# Generated from: PDB/RXR/3OZJ.pdb
+# Ligand: BGV in chain A
+
+receptor = receptor.pdbqt
+ligand = ligand.pdbqt
+
+center_x = 15.393
+center_y = 13.965
+center_z = 18.079
+
+size_x = 21.1
+size_y = 20.0
+size_z = 22.2
+
+exhaustiveness = 8
+num_modes = 9
+energy_range = 3

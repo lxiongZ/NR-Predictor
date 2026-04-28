@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <config key="column-filter">
+            <entry key="filter-type" type="xstring" value="STANDARD"/>
+            <config key="included_names">
+                <entry key="array-size" type="xint" value="31"/>
+                <entry key="0" type="xstring" value="ChEMBL ID"/>
+                <entry key="1" type="xstring" value="Assay Type"/>
+                <entry key="2" type="xstring" value="Description"/>
+                <entry key="3" type="xstring" value="Organism"/>
+                <entry key="4" type="xstring" value="Compounds"/>
+                <entry key="5" type="xstring" value="Activities"/>
+                <entry key="6" type="xstring" value="BAO Format ID"/>
+                <entry key="7" type="xstring" value="BAO Format"/>
+                <entry key="8" type="xstring" value="Confidence Score"/>
+                <entry key="9" type="xstring" value="Confidence Label"/>
+                <entry key="10" type="xstring" value="Strain"/>
+                <entry key="11" type="xstring" value="Source"/>
+                <entry key="12" type="xstring" value="Tax ID"/>
+                <entry key="13" type="xstring" value="Tissue ChEMBL ID"/>
+                <entry key="14" type="xstring" value="Tissue Name"/>
+                <entry key="15" type="xstring" value="Cell Type"/>
+                <entry key="16" type="xstring" value="Subcellular Fraction"/>
+                <entry key="17" type="xstring" value="Document ChEMBL ID"/>
+                <entry key="18" type="xstring" value="PubMed ID"/>
+                <entry key="19" type="xstring" value="DOI"/>
+                <entry key="20" type="xstring" value="Year"/>
+                <entry key="21" type="xstring" value="Journal"/>
+                <entry key="22" type="xstring" value="Volume"/>
+                <entry key="23" type="xstring" value="First Page"/>
+                <entry key="24" type="xstring" value="Last Page"/>
+                <entry key="25" type="xstring" value="Assay Parameters"/>
+                <entry key="26" type="xstring" value="Assay Classification L1"/>
+                <entry key="27" type="xstring" value="Assay Classification L2"/>
+                <entry key="28" type="xstring" value="Assay Classification L3"/>
+                <entry key="29" type="xstring" value="Variant Sequence Accession"/>
+                <entry key="30" type="xstring" value="Variant Sequence Mutation"/>
+            </config>
+            <config key="excluded_names">
+                <entry key="array-size" type="xint" value="41"/>
+                <entry key="0" type="xstring" value="Column31"/>
+                <entry key="1" type="xstring" value="Column32"/>
+                <entry key="2" type="xstring" value="Column33"/>
+                <entry key="3" type="xstring" value="Column34"/>
+                <entry key="4" type="xstring" value="Column35"/>
+                <entry key="5" type="xstring" value="Column36"/>
+                <entry key="6" type="xstring" value="Column37"/>
+                <entry key="7" type="xstring" value="Column38"/>
+                <entry key="8" type="xstring" value="Column39"/>
+                <entry key="9" type="xstring" value="Column40"/>
+                <entry key="10" type="xstring" value="Column41"/>
+                <entry key="11" type="xstring" value="Column42"/>
+                <entry key="12" type="xstring" value="Column43"/>
+                <entry key="13" type="xstring" value="Column44"/>
+                <entry key="14" type="xstring" value="Column45"/>
+                <entry key="15" type="xstring" value="Column46"/>
+                <entry key="16" type="xstring" value="Column47"/>
+                <entry key="17" type="xstring" value="Column48"/>
+                <entry key="18" type="xstring" value="Column49"/>
+                <entry key="19" type="xstring" value="Column50"/>
+                <entry key="20" type="xstring" value="Column51"/>
+                <entry key="21" type="xstring" value="Column52"/>
+                <entry key="22" type="xstring" value="Column53"/>
+                <entry key="23" type="xstring" value="Column54"/>
+                <entry key="24" type="xstring" value="Column55"/>
+                <entry key="25" type="xstring" value="Column56"/>
+                <entry key="26" type="xstring" value="Column57"/>
+                <entry key="27" type="xstring" value="Column58"/>
+                <entry key="28" type="xstring" value="Column59"/>
+                <entry key="29" type="xstring" value="Column60"/>
+                <entry key="30" type="xstring" value="Column61"/>
+                <entry key="31" type="xstring" value="Column62"/>
+                <entry key="32" type="xstring" value="Column63"/>
+                <entry key="33" type="xstring" value="Column64"/>
+                <entry key="34" type="xstring" value="Column65"/>
+                <entry key="35" type="xstring" value="Column66"/>
+                <entry key="36" type="xstring" value="Column67"/>
+                <entry key="37" type="xstring" value="Column68"/>
+                <entry key="38" type="xstring" value="Column69"/>
+                <entry key="39" type="xstring" value="Column70"/>
+                <entry key="40" type="xstring" value="Column71"/>
+            </config>
+            <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
+            <config key="name_pattern">
+                <entry key="pattern" type="xstring" value=""/>
+                <entry key="type" type="xstring" value="Wildcard"/>
+                <entry key="caseSensitive" type="xboolean" value="true"/>
+                <entry key="excludeMatching" type="xboolean" value="false"/>
+            </config>
+            <config key="datatype">
+                <config key="typelist"/>
+            </config>
+        </config>
+    </config>
+    <config key="variables"/>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
+    <entry key="factory" type="xstring" value="org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Column Filter"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="5.3.3.v202410291553"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Base nodes"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="5.3.3.v202410301420"/>
+    <config key="factory_settings"/>
+    <entry key="name" type="xstring" value="Column Filter"/>
+    <entry key="hasContent" type="xboolean" value="true"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 1407, Cols: 31"/>
+            <entry key="port_dir_location" type="xstring" value="port_1"/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" value="7c44b483-c8a7-4be3-a2a6-44586872a5ba"/>
+    </config>
+</config>

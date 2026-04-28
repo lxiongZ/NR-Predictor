@@ -1,0 +1,18 @@
+# AutoDock Vina configuration file
+# Generated from: PDB/RXR/3R2A.pdb
+# Ligand: RHN in chain A
+
+receptor = receptor.pdbqt
+ligand = ligand.pdbqt
+
+center_x = -50.585
+center_y = -11.209
+center_z = -0.321
+
+size_x = 20.7
+size_y = 22.7
+size_z = 21.6
+
+exhaustiveness = 8
+num_modes = 9
+energy_range = 3

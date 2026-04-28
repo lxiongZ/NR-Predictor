@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <config key="value_columns">
+            <entry key="filter-type" type="xstring" value="STANDARD"/>
+            <config key="included_names">
+                <entry key="array-size" type="xint" value="3"/>
+                <entry key="0" type="xstring" value="ag_val"/>
+                <entry key="1" type="xstring" value="antag_val"/>
+                <entry key="2" type="xstring" value="p_binding_value"/>
+            </config>
+            <config key="excluded_names">
+                <entry key="array-size" type="xint" value="25"/>
+                <entry key="0" type="xstring" value="ID"/>
+                <entry key="1" type="xstring" value="protein"/>
+                <entry key="2" type="xstring" value="organism"/>
+                <entry key="3" type="xstring" value="Agonist_assay"/>
+                <entry key="4" type="xstring" value="Antagonist_assay"/>
+                <entry key="5" type="xstring" value="Binding_assay"/>
+                <entry key="6" type="xstring" value="Binding_assay_value"/>
+                <entry key="7" type="xstring" value="activity"/>
+                <entry key="8" type="xstring" value="ref_activity"/>
+                <entry key="9" type="xstring" value="type_activity_test"/>
+                <entry key="10" type="xstring" value="ag_type"/>
+                <entry key="11" type="xstring" value="ag_eq"/>
+                <entry key="12" type="xstring" value="ag_unit"/>
+                <entry key="13" type="xstring" value="antag_type"/>
+                <entry key="14" type="xstring" value="antag_eq"/>
+                <entry key="15" type="xstring" value="antag_unit"/>
+                <entry key="16" type="xstring" value="binding_eq"/>
+                <entry key="17" type="xstring" value="p_binding_type"/>
+                <entry key="18" type="xstring" value="binder_nonbinder"/>
+                <entry key="19" type="xstring" value="binding_assay_type"/>
+                <entry key="20" type="xstring" value="canonical_smile"/>
+                <entry key="21" type="xstring" value="IEC50_based_annotation"/>
+                <entry key="22" type="xstring" value="perc_based_annotation"/>
+                <entry key="23" type="xstring" value="transfered_IEC50_annot"/>
+                <entry key="24" type="xstring" value="transfered_perc_annot"/>
+            </config>
+            <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
+            <config key="name_pattern">
+                <entry key="pattern" type="xstring" value=""/>
+                <entry key="type" type="xstring" value="Wildcard"/>
+                <entry key="caseSensitive" type="xboolean" value="true"/>
+                <entry key="excludeMatching" type="xboolean" value="false"/>
+            </config>
+            <config key="datatype">
+                <config key="typelist"/>
+            </config>
+        </config>
+        <config key="missing-values_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="missing-values" type="xboolean" value="false"/>
+        <config key="retained_columns">
+            <entry key="filter-type" type="xstring" value="STANDARD"/>
+            <config key="included_names">
+                <entry key="array-size" type="xint" value="25"/>
+                <entry key="0" type="xstring" value="ID"/>
+                <entry key="1" type="xstring" value="protein"/>
+                <entry key="2" type="xstring" value="organism"/>
+                <entry key="3" type="xstring" value="Agonist_assay"/>
+                <entry key="4" type="xstring" value="Antagonist_assay"/>
+                <entry key="5" type="xstring" value="Binding_assay"/>
+                <entry key="6" type="xstring" value="Binding_assay_value"/>
+                <entry key="7" type="xstring" value="activity"/>
+                <entry key="8" type="xstring" value="ref_activity"/>
+                <entry key="9" type="xstring" value="type_activity_test"/>
+                <entry key="10" type="xstring" value="ag_type"/>
+                <entry key="11" type="xstring" value="ag_eq"/>
+                <entry key="12" type="xstring" value="ag_unit"/>
+                <entry key="13" type="xstring" value="antag_type"/>
+                <entry key="14" type="xstring" value="antag_eq"/>
+                <entry key="15" type="xstring" value="antag_unit"/>
+                <entry key="16" type="xstring" value="binding_eq"/>
+                <entry key="17" type="xstring" value="p_binding_type"/>
+                <entry key="18" type="xstring" value="binder_nonbinder"/>
+                <entry key="19" type="xstring" value="binding_assay_type"/>
+                <entry key="20" type="xstring" value="canonical_smile"/>
+                <entry key="21" type="xstring" value="IEC50_based_annotation"/>
+                <entry key="22" type="xstring" value="perc_based_annotation"/>
+                <entry key="23" type="xstring" value="transfered_IEC50_annot"/>
+                <entry key="24" type="xstring" value="transfered_perc_annot"/>
+            </config>
+            <config key="excluded_names">
+                <entry key="array-size" type="xint" value="3"/>
+                <entry key="0" type="xstring" value="ag_val"/>
+                <entry key="1" type="xstring" value="antag_val"/>
+                <entry key="2" type="xstring" value="p_binding_value"/>
+            </config>
+            <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
+            <config key="name_pattern">
+                <entry key="pattern" type="xstring" value=""/>
+                <entry key="type" type="xstring" value="Wildcard"/>
+                <entry key="caseSensitive" type="xboolean" value="true"/>
+                <entry key="excludeMatching" type="xboolean" value="false"/>
+            </config>
+            <config key="datatype">
+                <config key="typelist"/>
+            </config>
+        </config>
+        <config key="enable-hiliting_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="enable-hiliting" type="xboolean" value="false"/>
+    </config>
+    <config key="variables"/>
+    <config key="nodeAnnotation">
+        <entry key="text" type="xstring" value="Mapping, turning three columns into rows"/>
+        <entry key="contentType" type="xstring" value="text/plain"/>
+        <entry key="bgcolor" type="xint" value="16777215"/>
+        <entry key="x-coordinate" type="xint" value="0"/>
+        <entry key="y-coordinate" type="xint" value="0"/>
+        <entry key="width" type="xint" value="0"/>
+        <entry key="height" type="xint" value="0"/>
+        <entry key="alignment" type="xstring" value="CENTER"/>
+        <entry key="borderSize" type="xint" value="0"/>
+        <entry key="borderColor" type="xint" value="0"/>
+        <entry key="defFontSize" type="xint" value="-1"/>
+        <entry key="annotation-version" type="xint" value="20230412"/>
+        <config key="styles"/>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
+    <entry key="factory" type="xstring" value="org.knime.base.node.preproc.unpivot2.Unpivot2NodeFactory"/>
+    <entry key="node-name" type="xstring" value="Unpivot"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="5.3.3.v202410291553"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Base nodes"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="5.3.3.v202410301420"/>
+    <config key="factory_settings"/>
+    <entry key="name" type="xstring" value="Unpivot"/>
+    <entry key="hasContent" type="xboolean" value="true"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 45348, Cols: 28"/>
+            <entry key="port_dir_location" type="xstring" value="port_1"/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" value="aa94dd27-6e2c-49f0-a531-55c506b43052"/>
+    </config>
+</config>
