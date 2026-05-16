@@ -8,6 +8,7 @@ import torch
 import torch.nn.functional as F
 from torch_geometric.loader import DataLoader
 import numpy as np
+import pandas as pd
 import random
 import os
 
@@ -15,6 +16,10 @@ from dgl_graph import LoadDataset
 from gnn_mtl.gnn import create_gnn_model
 
 device = torch.device('cuda:2' if torch.cuda.is_available() else 'cpu')
+
+TASK_NAMES = ['BIN_ESRRA', 'BIN_PR', 'BIN_RXRA', 'BIN_ESR1', 'BIN_ESR2',
+              'BIN_GR', 'BIN_MR', 'BIN_AR', 'BIN_FXR', 'BIN_PPARG',
+              'BIN_THRB', 'BIN_PPARA']
 
 def set_seed(seed):
     random.seed(seed)
@@ -27,6 +32,36 @@ def set_seed(seed):
     torch.backends.cudnn.benchmark = False
     torch.backends.cudnn.deterministic = True
     os.environ['CUBLAS_WORKSPACE_CONFIG'] = ':4096:8'
+
+def load_protein_encodings(csv_path='protein_full_embeddings_12.csv', task_names=None):
+    df = pd.read_csv(csv_path, encoding='gbk')
+
+    protein_to_task = {
+        'ESRRA': 'BIN_ESRRA',
+        'PR': 'BIN_PR',
+        'RXRA': 'BIN_RXRA',
+        'ESR1': 'BIN_ESR1',
+        'ESR2': 'BIN_ESR2',
+        'GR': 'BIN_GR',
+        'MR': 'BIN_MR',
+        'AR': 'BIN_AR',
+        'FXR': 'BIN_FXR',
+        'PPARG': 'BIN_PPARG',
+        'THRB': 'BIN_THRB',
+        'PPARA': 'BIN_PPARA'
+    }
+
+    encodings = []
+    for task_name in task_names:
+        protein_name = [k for k, v in protein_to_task.items() if v == task_name][0]
+        row = df[df['protein'] == protein_name]
+        if row.empty:
+            raise ValueError(f"Protein {protein_name} not found in {csv_path}")
+
+        encoding = row.iloc[0, 2:].values.astype(np.float32)
+        encodings.append(encoding)
+
+    return torch.from_numpy(np.array(encodings))
 
 def calculate_task_pos_weights(train_dataset, num_tasks=12):
     task_counts = torch.zeros(num_tasks, 2)  # [num_tasks, 2] -> [neg, pos]
@@ -103,7 +138,7 @@ def validate_model(model, val_loader, pos_weights, device, model_name):
 
     return val_loss / len(val_loader)
 
-def objective(trial, train_dataset, val_dataset, model_name, in_channels, edge_dim):
+def objective(trial, train_dataset, val_dataset, model_name, in_channels, edge_dim, protein_encodings):
     
     hidden_channels = trial.suggest_categorical('hidden_channels', [64, 128, 256])
     num_layers = trial.suggest_int('num_layers', 1, 5)
@@ -113,20 +148,22 @@ def objective(trial, train_dataset, val_dataset, model_name, in_channels, edge_d
     batch_size = trial.suggest_categorical('batch_size', [32, 64, 128])
     gamma = trial.suggest_categorical('gamma', [0.95, 0.99, 1])
     num_timesteps = trial.suggest_int('num_timesteps', 1, 3)
+    trial_protein_encodings = protein_encodings.detach().clone()
 
     model = create_gnn_model(
         model_name=model_name,
         in_channels=in_channels,
         hidden_channels=hidden_channels,
-        out_channels=12,  
+        out_channels=len(TASK_NAMES),
         edge_dim=edge_dim,
         num_layers=num_layers,
         dropout=dropout,
-        num_timesteps=num_timesteps
+        num_timesteps=num_timesteps,
+        protein_encodings=trial_protein_encodings
     )
     model.to(device)
 
-    pos_weights = calculate_task_pos_weights(train_dataset, num_tasks=12)
+    pos_weights = calculate_task_pos_weights(train_dataset, num_tasks=len(TASK_NAMES))
 
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
     val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False)
@@ -160,7 +197,7 @@ def objective(trial, train_dataset, val_dataset, model_name, in_channels, edge_d
     return best_loss
 
 from tqdm import tqdm
-def hyperparameter_search(dataset, model_names, in_channels, edge_dim, n_trials=30):
+def hyperparameter_search(dataset, model_names, in_channels, edge_dim, protein_encodings, n_trials=30):
 
     train_dataset = dataset.get_split_dataset('train')
     val_dataset = dataset.get_split_dataset('val')
@@ -177,13 +214,13 @@ def hyperparameter_search(dataset, model_names, in_channels, edge_dim, n_trials=
         sampler = TPESampler(seed=42)
         study = optuna.create_study(
             direction='minimize',
-            study_name=f"NR_multitask_{model_name}",
+            study_name=f"NR_multitask_{model_name}_protein",
             sampler=sampler
         )
 
         study.optimize(
             lambda trial: objective(trial, train_dataset, val_dataset,
-                                   model_name, in_channels, edge_dim),
+                                   model_name, in_channels, edge_dim, protein_encodings),
             n_trials=n_trials
         )
 
@@ -211,10 +248,15 @@ if __name__ == '__main__':
     sample_data = dataset[0]
     in_channels = sample_data.x.size(1)
     edge_dim = sample_data.edge_attr.size(1)
+    num_tasks = sample_data.y.size(1) if sample_data.y.dim() == 2 else sample_data.y.size(0)
 
     print(f"Dataset loaded: {len(dataset)} molecules")
     print(f"Node feature dim: {in_channels}, Edge feature dim: {edge_dim}")
-    print(f"Number of tasks: {sample_data.y.size(1)}") 
+    print(f"Number of tasks: {num_tasks}")
+
+    print("\nLoading protein encodings...")
+    protein_encodings = load_protein_encodings('protein_full_embeddings_12.csv', TASK_NAMES)
+    print(f"Protein encodings shape: {protein_encodings.shape}")
 
     model_names = ['gt', 'gin', 'gcn', 'gat', 'afp', 'dmpnn']
 
@@ -223,6 +265,7 @@ if __name__ == '__main__':
         model_names=model_names,
         in_channels=in_channels,
         edge_dim=edge_dim,
+        protein_encodings=protein_encodings,
         n_trials=30  
     )
     
