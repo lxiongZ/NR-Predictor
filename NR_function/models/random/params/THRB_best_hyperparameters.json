@@ -1,0 +1,11 @@
+{
+  "best_params_template": {
+    "booster": "gbtree",
+    "learning_rate": 0.05,
+    "max_depth": 3,
+    "n_estimators": 100,
+    "objective": "binary:logistic",
+    "random_state": 42,
+    "scale_pos_weight": null
+  }
+}

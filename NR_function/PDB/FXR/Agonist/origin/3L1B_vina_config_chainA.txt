@@ -1,0 +1,18 @@
+# AutoDock Vina configuration file
+# Generated from: D:\learning\NR_new\项目进展_25年11月底\26年NR-Predictor\发给老师版本_from_Apr_7\五月投递\返稿\data_new\10_NRs\PDB\FXR\Agonist\origin\3L1B.pdb
+# Ligand: 635 in chain A
+
+receptor = receptor.pdbqt
+ligand = ligand.pdbqt
+
+center_x = -1.358
+center_y = 1.051
+center_z = 7.684
+
+size_x = 27.4
+size_y = 26.7
+size_z = 29.0
+
+exhaustiveness = 8
+num_modes = 9
+energy_range = 3

@@ -1,0 +1,18 @@
+# AutoDock Vina configuration file
+# Generated from: D:\learning\NR_new\项目进展_25年11月底\26年NR-Predictor\发给老师版本_from_Apr_7\五月投递\返稿\data_new\10_NRs\PDB\ESR1\Agonist\origin\3ERD.pdb
+# Ligand: DES in chain A
+
+receptor = receptor.pdbqt
+ligand = ligand.pdbqt
+
+center_x = 5.308
+center_y = -0.202
+center_z = -5.481
+
+size_x = 26.7
+size_y = 20.6
+size_z = 20.0
+
+exhaustiveness = 8
+num_modes = 9
+energy_range = 3

@@ -1,0 +1,18 @@
+# AutoDock Vina configuration file
+# Generated from: D:\learning\NR_new\项目进展_25年11月底\26年NR-Predictor\发给老师版本_from_Apr_7\五月投递\返稿\data_new\10_NRs\PDB\FXR\Antagonist\origin\4WVD.pdb
+# Ligand: IVM in chain A
+
+receptor = receptor.pdbqt
+ligand = ligand.pdbqt
+
+center_x = 5.929
+center_y = -21.556
+center_z = -52.037
+
+size_x = 23.9
+size_y = 29.6
+size_z = 31.5
+
+exhaustiveness = 8
+num_modes = 9
+energy_range = 3

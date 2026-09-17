@@ -1,0 +1,18 @@
+# AutoDock Vina configuration file
+# Generated from: D:\learning\NR_new\项目进展_25年11月底\26年NR-Predictor\发给老师版本_from_Apr_7\五月投递\返稿\data_new\10_NRs\PDB\PR\Antagonist\origin\2OVM.pdb
+# Ligand: AS0 in chain A
+
+receptor = receptor.pdbqt
+ligand = ligand.pdbqt
+
+center_x = -29.362
+center_y = 51.100
+center_z = 44.567
+
+size_x = 25.4
+size_y = 24.5
+size_z = 24.3
+
+exhaustiveness = 8
+num_modes = 9
+energy_range = 3

@@ -1,0 +1,18 @@
+# AutoDock Vina configuration file
+# Generated from: D:\learning\NR_new\项目进展_25年11月底\26年NR-Predictor\发给老师版本_from_Apr_7\五月投递\返稿\data_new\10_NRs\PDB\RXRA\Agonist\origin\3KMR.pdb
+# Ligand: EQN in chain A
+
+receptor = receptor.pdbqt
+ligand = ligand.pdbqt
+
+center_x = -8.157
+center_y = -8.630
+center_z = -13.104
+
+size_x = 22.8
+size_y = 23.4
+size_z = 25.9
+
+exhaustiveness = 8
+num_modes = 9
+energy_range = 3

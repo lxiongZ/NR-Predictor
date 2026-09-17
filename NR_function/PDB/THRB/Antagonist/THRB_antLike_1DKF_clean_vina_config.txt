@@ -1,0 +1,18 @@
+# AutoDock Vina configuration file
+# Generated from: PDB/THRB/Antagonist/THRB_antLike_1DKF_clean.pdbqt
+# Size template: max box size from THRB agonist configs
+
+receptor = receptor.pdbqt
+ligand = ligand.pdbqt
+
+center_x = -20.157
+center_y = 81.953
+center_z = -0.328
+
+size_x = 22
+size_y = 28
+size_z = 24
+
+exhaustiveness = 8
+num_modes = 9
+energy_range = 3

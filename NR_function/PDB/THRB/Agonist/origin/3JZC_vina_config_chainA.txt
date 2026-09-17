@@ -1,0 +1,18 @@
+# AutoDock Vina configuration file
+# Generated from: D:\learning\NR_new\项目进展_25年11月底\26年NR-Predictor\发给老师版本_from_Apr_7\五月投递\返稿\data_new\10_NRs\PDB\THRB\Agonist\origin\3JZC.pdb
+# Ligand: 4HY in chain A
+
+receptor = receptor.pdbqt
+ligand = ligand.pdbqt
+
+center_x = -14.729
+center_y = -13.909
+center_z = -28.848
+
+size_x = 20.0
+size_y = 25.1
+size_z = 22.6
+
+exhaustiveness = 8
+num_modes = 9
+energy_range = 3

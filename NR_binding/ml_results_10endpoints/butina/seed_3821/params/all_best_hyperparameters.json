@@ -1,0 +1,962 @@
+{
+    "BIN_ESRRA_RF_ecfp": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 9,
+        "n_estimators": 90,
+        "random_state": 42
+    },
+    "BIN_ESRRA_RF_pubchem": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 9,
+        "n_estimators": 70,
+        "random_state": 42
+    },
+    "BIN_ESRRA_RF_erg": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 9,
+        "n_estimators": 100,
+        "random_state": 42
+    },
+    "BIN_ESRRA_RF_rdkit": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 9,
+        "n_estimators": 80,
+        "random_state": 42
+    },
+    "BIN_ESRRA_SVM_ecfp": {
+        "C": 0.5,
+        "class_weight": "balanced",
+        "gamma": "auto",
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_ESRRA_SVM_pubchem": {
+        "C": 1.5,
+        "class_weight": "balanced",
+        "gamma": "auto",
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_ESRRA_SVM_erg": {
+        "C": 0.5,
+        "class_weight": "balanced",
+        "gamma": "scale",
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_ESRRA_SVM_rdkit": {
+        "C": 5.0,
+        "class_weight": "balanced",
+        "gamma": "scale",
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_ESRRA_XGB_ecfp": {
+        "booster": "gbtree",
+        "learning_rate": 0.1,
+        "max_depth": 9,
+        "n_estimators": 100,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 19.49019607843137
+    },
+    "BIN_ESRRA_XGB_pubchem": {
+        "booster": "gbtree",
+        "learning_rate": 0.1,
+        "max_depth": 9,
+        "n_estimators": 70,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 19.49019607843137
+    },
+    "BIN_ESRRA_XGB_erg": {
+        "booster": "gbtree",
+        "learning_rate": 0.1,
+        "max_depth": 9,
+        "n_estimators": 50,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 19.49019607843137
+    },
+    "BIN_ESRRA_XGB_rdkit": {
+        "booster": "gbtree",
+        "learning_rate": 0.05,
+        "max_depth": 7,
+        "n_estimators": 100,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 19.49019607843137
+    },
+    "BIN_PR_RF_ecfp": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 9,
+        "n_estimators": 20,
+        "random_state": 42
+    },
+    "BIN_PR_RF_pubchem": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 9,
+        "n_estimators": 60,
+        "random_state": 42
+    },
+    "BIN_PR_RF_erg": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 9,
+        "n_estimators": 100,
+        "random_state": 42
+    },
+    "BIN_PR_RF_rdkit": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 7,
+        "n_estimators": 20,
+        "random_state": 42
+    },
+    "BIN_PR_SVM_ecfp": {
+        "C": 5.0,
+        "class_weight": "balanced",
+        "gamma": 0.01,
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_PR_SVM_pubchem": {
+        "C": 2.0,
+        "class_weight": "balanced",
+        "gamma": 0.01,
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_PR_SVM_erg": {
+        "C": 0.5,
+        "class_weight": "balanced",
+        "gamma": "auto",
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_PR_SVM_rdkit": {
+        "C": 0.5,
+        "class_weight": "balanced",
+        "gamma": "scale",
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_PR_XGB_ecfp": {
+        "booster": "gbtree",
+        "learning_rate": 0.1,
+        "max_depth": 9,
+        "n_estimators": 100,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 3.817413355874894
+    },
+    "BIN_PR_XGB_pubchem": {
+        "booster": "gbtree",
+        "learning_rate": 0.1,
+        "max_depth": 9,
+        "n_estimators": 100,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 3.817413355874894
+    },
+    "BIN_PR_XGB_erg": {
+        "booster": "gbtree",
+        "learning_rate": 0.1,
+        "max_depth": 9,
+        "n_estimators": 100,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 3.817413355874894
+    },
+    "BIN_PR_XGB_rdkit": {
+        "booster": "gbtree",
+        "learning_rate": 0.1,
+        "max_depth": 5,
+        "n_estimators": 100,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 3.817413355874894
+    },
+    "BIN_RXRA_RF_ecfp": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 9,
+        "n_estimators": 100,
+        "random_state": 42
+    },
+    "BIN_RXRA_RF_pubchem": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 7,
+        "n_estimators": 10,
+        "random_state": 42
+    },
+    "BIN_RXRA_RF_erg": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 7,
+        "n_estimators": 10,
+        "random_state": 42
+    },
+    "BIN_RXRA_RF_rdkit": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 9,
+        "n_estimators": 70,
+        "random_state": 42
+    },
+    "BIN_RXRA_SVM_ecfp": {
+        "C": 1.0,
+        "class_weight": "balanced",
+        "gamma": 0.01,
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_RXRA_SVM_pubchem": {
+        "C": 0.5,
+        "class_weight": "balanced",
+        "gamma": 0.01,
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_RXRA_SVM_erg": {
+        "C": 3.5,
+        "class_weight": "balanced",
+        "gamma": "scale",
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_RXRA_SVM_rdkit": {
+        "C": 5.0,
+        "class_weight": "balanced",
+        "gamma": "scale",
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_RXRA_XGB_ecfp": {
+        "booster": "gbtree",
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "n_estimators": 100,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 4.921976592977893
+    },
+    "BIN_RXRA_XGB_pubchem": {
+        "booster": "gbtree",
+        "learning_rate": 0.1,
+        "max_depth": 5,
+        "n_estimators": 70,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 4.921976592977893
+    },
+    "BIN_RXRA_XGB_erg": {
+        "booster": "gbtree",
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "n_estimators": 100,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 4.921976592977893
+    },
+    "BIN_RXRA_XGB_rdkit": {
+        "booster": "gbtree",
+        "learning_rate": 0.1,
+        "max_depth": 5,
+        "n_estimators": 60,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 4.921976592977893
+    },
+    "BIN_ESR1_RF_ecfp": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 9,
+        "n_estimators": 20,
+        "random_state": 42
+    },
+    "BIN_ESR1_RF_pubchem": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 5,
+        "n_estimators": 10,
+        "random_state": 42
+    },
+    "BIN_ESR1_RF_erg": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 3,
+        "n_estimators": 70,
+        "random_state": 42
+    },
+    "BIN_ESR1_RF_rdkit": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 5,
+        "n_estimators": 60,
+        "random_state": 42
+    },
+    "BIN_ESR1_SVM_ecfp": {
+        "C": 2.0,
+        "class_weight": "balanced",
+        "gamma": 0.01,
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_ESR1_SVM_pubchem": {
+        "C": 5.0,
+        "class_weight": "balanced",
+        "gamma": "auto",
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_ESR1_SVM_erg": {
+        "C": 1.0,
+        "class_weight": "balanced",
+        "gamma": 0.05,
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_ESR1_SVM_rdkit": {
+        "C": 0.5,
+        "class_weight": "balanced",
+        "gamma": "scale",
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_ESR1_XGB_ecfp": {
+        "booster": "gbtree",
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 100,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 2.169567157518965
+    },
+    "BIN_ESR1_XGB_pubchem": {
+        "booster": "gbtree",
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 100,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 2.169567157518965
+    },
+    "BIN_ESR1_XGB_erg": {
+        "booster": "gbtree",
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 70,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 2.169567157518965
+    },
+    "BIN_ESR1_XGB_rdkit": {
+        "booster": "gbtree",
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "n_estimators": 100,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 2.169567157518965
+    },
+    "BIN_ESR2_RF_ecfp": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 9,
+        "n_estimators": 90,
+        "random_state": 42
+    },
+    "BIN_ESR2_RF_pubchem": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 9,
+        "n_estimators": 20,
+        "random_state": 42
+    },
+    "BIN_ESR2_RF_erg": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 9,
+        "n_estimators": 40,
+        "random_state": 42
+    },
+    "BIN_ESR2_RF_rdkit": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 9,
+        "n_estimators": 60,
+        "random_state": 42
+    },
+    "BIN_ESR2_SVM_ecfp": {
+        "C": 1.0,
+        "class_weight": "balanced",
+        "gamma": "auto",
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_ESR2_SVM_pubchem": {
+        "C": 0.5,
+        "class_weight": "balanced",
+        "gamma": "auto",
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_ESR2_SVM_erg": {
+        "C": 1.0,
+        "class_weight": "balanced",
+        "gamma": 0.05,
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_ESR2_SVM_rdkit": {
+        "C": 0.5,
+        "class_weight": "balanced",
+        "gamma": "scale",
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_ESR2_XGB_ecfp": {
+        "booster": "gbtree",
+        "learning_rate": 0.1,
+        "max_depth": 9,
+        "n_estimators": 80,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 4.2578671328671325
+    },
+    "BIN_ESR2_XGB_pubchem": {
+        "booster": "gbtree",
+        "learning_rate": 0.1,
+        "max_depth": 7,
+        "n_estimators": 50,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 4.2578671328671325
+    },
+    "BIN_ESR2_XGB_erg": {
+        "booster": "gbtree",
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "n_estimators": 70,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 4.2578671328671325
+    },
+    "BIN_ESR2_XGB_rdkit": {
+        "booster": "gbtree",
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 100,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 4.2578671328671325
+    },
+    "BIN_GR_RF_ecfp": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 9,
+        "n_estimators": 10,
+        "random_state": 42
+    },
+    "BIN_GR_RF_pubchem": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 9,
+        "n_estimators": 20,
+        "random_state": 42
+    },
+    "BIN_GR_RF_erg": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 9,
+        "n_estimators": 20,
+        "random_state": 42
+    },
+    "BIN_GR_RF_rdkit": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 9,
+        "n_estimators": 20,
+        "random_state": 42
+    },
+    "BIN_GR_SVM_ecfp": {
+        "C": 5.0,
+        "class_weight": "balanced",
+        "gamma": "auto",
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_GR_SVM_pubchem": {
+        "C": 1.0,
+        "class_weight": "balanced",
+        "gamma": "auto",
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_GR_SVM_erg": {
+        "C": 0.5,
+        "class_weight": "balanced",
+        "gamma": 0.01,
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_GR_SVM_rdkit": {
+        "C": 5.0,
+        "class_weight": "balanced",
+        "gamma": "scale",
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_GR_XGB_ecfp": {
+        "booster": "gbtree",
+        "learning_rate": 0.1,
+        "max_depth": 9,
+        "n_estimators": 100,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 1.9781054512957998
+    },
+    "BIN_GR_XGB_pubchem": {
+        "booster": "gbtree",
+        "learning_rate": 0.1,
+        "max_depth": 5,
+        "n_estimators": 100,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 1.9781054512957998
+    },
+    "BIN_GR_XGB_erg": {
+        "booster": "gbtree",
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 100,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 1.9781054512957998
+    },
+    "BIN_GR_XGB_rdkit": {
+        "booster": "gbtree",
+        "learning_rate": 0.1,
+        "max_depth": 5,
+        "n_estimators": 100,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 1.9781054512957998
+    },
+    "BIN_AR_RF_ecfp": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 9,
+        "n_estimators": 40,
+        "random_state": 42
+    },
+    "BIN_AR_RF_pubchem": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 9,
+        "n_estimators": 50,
+        "random_state": 42
+    },
+    "BIN_AR_RF_erg": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 9,
+        "n_estimators": 90,
+        "random_state": 42
+    },
+    "BIN_AR_RF_rdkit": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 9,
+        "n_estimators": 10,
+        "random_state": 42
+    },
+    "BIN_AR_SVM_ecfp": {
+        "C": 0.5,
+        "class_weight": "balanced",
+        "gamma": "auto",
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_AR_SVM_pubchem": {
+        "C": 0.5,
+        "class_weight": "balanced",
+        "gamma": "auto",
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_AR_SVM_erg": {
+        "C": 1.0,
+        "class_weight": "balanced",
+        "gamma": "scale",
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_AR_SVM_rdkit": {
+        "C": 1.5,
+        "class_weight": "balanced",
+        "gamma": "scale",
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_AR_XGB_ecfp": {
+        "booster": "gbtree",
+        "learning_rate": 0.1,
+        "max_depth": 5,
+        "n_estimators": 90,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 3.195727084769125
+    },
+    "BIN_AR_XGB_pubchem": {
+        "booster": "gbtree",
+        "learning_rate": 0.05,
+        "max_depth": 7,
+        "n_estimators": 100,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 3.195727084769125
+    },
+    "BIN_AR_XGB_erg": {
+        "booster": "gbtree",
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 40,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 3.195727084769125
+    },
+    "BIN_AR_XGB_rdkit": {
+        "booster": "gbtree",
+        "learning_rate": 0.1,
+        "max_depth": 7,
+        "n_estimators": 60,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 3.195727084769125
+    },
+    "BIN_FXR_RF_ecfp": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 9,
+        "n_estimators": 20,
+        "random_state": 42
+    },
+    "BIN_FXR_RF_pubchem": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 9,
+        "n_estimators": 20,
+        "random_state": 42
+    },
+    "BIN_FXR_RF_erg": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 7,
+        "n_estimators": 30,
+        "random_state": 42
+    },
+    "BIN_FXR_RF_rdkit": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 7,
+        "n_estimators": 20,
+        "random_state": 42
+    },
+    "BIN_FXR_SVM_ecfp": {
+        "C": 5.0,
+        "class_weight": "balanced",
+        "gamma": 0.01,
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_FXR_SVM_pubchem": {
+        "C": 1.0,
+        "class_weight": "balanced",
+        "gamma": "auto",
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_FXR_SVM_erg": {
+        "C": 3.5,
+        "class_weight": "balanced",
+        "gamma": 0.01,
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_FXR_SVM_rdkit": {
+        "C": 5.0,
+        "class_weight": "balanced",
+        "gamma": "scale",
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_FXR_XGB_ecfp": {
+        "booster": "gbtree",
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 100,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 1.9447084233261338
+    },
+    "BIN_FXR_XGB_pubchem": {
+        "booster": "gbtree",
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "n_estimators": 90,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 1.9447084233261338
+    },
+    "BIN_FXR_XGB_erg": {
+        "booster": "gbtree",
+        "learning_rate": 0.1,
+        "max_depth": 5,
+        "n_estimators": 50,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 1.9447084233261338
+    },
+    "BIN_FXR_XGB_rdkit": {
+        "booster": "gbtree",
+        "learning_rate": 0.1,
+        "max_depth": 5,
+        "n_estimators": 50,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 1.9447084233261338
+    },
+    "BIN_PPARG_RF_ecfp": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 9,
+        "n_estimators": 90,
+        "random_state": 42
+    },
+    "BIN_PPARG_RF_pubchem": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 9,
+        "n_estimators": 70,
+        "random_state": 42
+    },
+    "BIN_PPARG_RF_erg": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 9,
+        "n_estimators": 30,
+        "random_state": 42
+    },
+    "BIN_PPARG_RF_rdkit": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 9,
+        "n_estimators": 100,
+        "random_state": 42
+    },
+    "BIN_PPARG_SVM_ecfp": {
+        "C": 1.5,
+        "class_weight": "balanced",
+        "gamma": 0.01,
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_PPARG_SVM_pubchem": {
+        "C": 2.5,
+        "class_weight": "balanced",
+        "gamma": 0.01,
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_PPARG_SVM_erg": {
+        "C": 4.5,
+        "class_weight": "balanced",
+        "gamma": 0.01,
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_PPARG_SVM_rdkit": {
+        "C": 5.0,
+        "class_weight": "balanced",
+        "gamma": "scale",
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_PPARG_XGB_ecfp": {
+        "booster": "gbtree",
+        "learning_rate": 0.1,
+        "max_depth": 9,
+        "n_estimators": 100,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 2.5756280064136825
+    },
+    "BIN_PPARG_XGB_pubchem": {
+        "booster": "gbtree",
+        "learning_rate": 0.1,
+        "max_depth": 5,
+        "n_estimators": 80,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 2.5756280064136825
+    },
+    "BIN_PPARG_XGB_erg": {
+        "booster": "gbtree",
+        "learning_rate": 0.1,
+        "max_depth": 9,
+        "n_estimators": 50,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 2.5756280064136825
+    },
+    "BIN_PPARG_XGB_rdkit": {
+        "booster": "gbtree",
+        "learning_rate": 0.05,
+        "max_depth": 9,
+        "n_estimators": 90,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 2.5756280064136825
+    },
+    "BIN_THRB_RF_ecfp": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 9,
+        "n_estimators": 70,
+        "random_state": 42
+    },
+    "BIN_THRB_RF_pubchem": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 9,
+        "n_estimators": 10,
+        "random_state": 42
+    },
+    "BIN_THRB_RF_erg": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 9,
+        "n_estimators": 30,
+        "random_state": 42
+    },
+    "BIN_THRB_RF_rdkit": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 9,
+        "n_estimators": 80,
+        "random_state": 42
+    },
+    "BIN_THRB_SVM_ecfp": {
+        "C": 5.0,
+        "class_weight": "balanced",
+        "gamma": "scale",
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_THRB_SVM_pubchem": {
+        "C": 0.5,
+        "class_weight": "balanced",
+        "gamma": 0.01,
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_THRB_SVM_erg": {
+        "C": 1.0,
+        "class_weight": "balanced",
+        "gamma": 0.05,
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_THRB_SVM_rdkit": {
+        "C": 3.0,
+        "class_weight": "balanced",
+        "gamma": "scale",
+        "kernel": "rbf",
+        "probability": true,
+        "random_state": 42
+    },
+    "BIN_THRB_XGB_ecfp": {
+        "booster": "gbtree",
+        "learning_rate": 0.05,
+        "max_depth": 9,
+        "n_estimators": 100,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 15.606271777003485
+    },
+    "BIN_THRB_XGB_pubchem": {
+        "booster": "gbtree",
+        "learning_rate": 0.1,
+        "max_depth": 7,
+        "n_estimators": 90,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 15.606271777003485
+    },
+    "BIN_THRB_XGB_erg": {
+        "booster": "gbtree",
+        "learning_rate": 0.1,
+        "max_depth": 7,
+        "n_estimators": 100,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 15.606271777003485
+    },
+    "BIN_THRB_XGB_rdkit": {
+        "booster": "gbtree",
+        "learning_rate": 0.05,
+        "max_depth": 7,
+        "n_estimators": 100,
+        "objective": "binary:logistic",
+        "random_state": 42,
+        "scale_pos_weight": 15.606271777003485
+    }
+}

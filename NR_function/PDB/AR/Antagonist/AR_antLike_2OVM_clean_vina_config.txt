@@ -1,0 +1,18 @@
+# AutoDock Vina configuration file
+# Generated from: PDB/AR/Antagonist/AR_antLike_2OVM_clean.pdbqt
+# Size template: PDB/PR/Antagonist/origin/2OVM_vina_config_chainA.txt
+
+receptor = receptor.pdbqt
+ligand = ligand.pdbqt
+
+center_x = -28.586
+center_y = 49.989
+center_z = 44.444
+
+size_x = 26
+size_y = 22
+size_z = 22
+
+exhaustiveness = 8
+num_modes = 9
+energy_range = 3

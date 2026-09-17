@@ -1,0 +1,18 @@
+# AutoDock Vina configuration file
+# Generated from: D:\learning\NR_new\项目进展_25年11月底\26年NR-Predictor\发给老师版本_from_Apr_7\五月投递\返稿\data_new\10_NRs\PDB\THRB\Agonist\origin\6KKB.pdb
+# Ligand: 8HO in chain X
+
+receptor = receptor.pdbqt
+ligand = ligand.pdbqt
+
+center_x = 33.149
+center_y = -10.355
+center_z = 14.816
+
+size_x = 26.6
+size_y = 21.3
+size_z = 24.8
+
+exhaustiveness = 8
+num_modes = 9
+energy_range = 3

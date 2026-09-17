@@ -1,0 +1,18 @@
+# AutoDock Vina configuration file
+# Generated from: D:\learning\NR_new\项目进展_25年11月底\26年NR-Predictor\发给老师版本_from_Apr_7\五月投递\返稿\data_new\10_NRs\PDB\FXR\Agonist\origin\7TRB.pdb
+# Ligand: IUS in chain A
+
+receptor = receptor.pdbqt
+ligand = ligand.pdbqt
+
+center_x = 31.784
+center_y = -7.189
+center_z = 14.481
+
+size_x = 24.5
+size_y = 28.2
+size_z = 32.5
+
+exhaustiveness = 8
+num_modes = 9
+energy_range = 3

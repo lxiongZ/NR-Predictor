@@ -1,0 +1,18 @@
+# AutoDock Vina configuration file
+# Generated from: D:\learning\NR_new\项目进展_25年11月底\26年NR-Predictor\发给老师版本_from_Apr_7\五月投递\返稿\data_new\10_NRs\PDB\PR\Agonist\origin\3D90.pdb
+# Ligand: NOG in chain A
+
+receptor = receptor.pdbqt
+ligand = ligand.pdbqt
+
+center_x = -2.723
+center_y = -8.192
+center_z = 25.699
+
+size_x = 20.0
+size_y = 22.1
+size_z = 24.9
+
+exhaustiveness = 8
+num_modes = 9
+energy_range = 3

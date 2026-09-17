@@ -1,0 +1,18 @@
+# AutoDock Vina configuration file
+# Generated from: D:\learning\NR_new\项目进展_25年11月底\26年NR-Predictor\发给老师版本_from_Apr_7\五月投递\返稿\data_new\10_NRs\PDB\ESR1\Antagonist\origin\5ACC.pdb
+# Ligand: KE9 in chain A
+
+receptor = receptor.pdbqt
+ligand = ligand.pdbqt
+
+center_x = 14.556
+center_y = 22.086
+center_z = 65.424
+
+size_x = 23.3
+size_y = 25.2
+size_z = 25.5
+
+exhaustiveness = 8
+num_modes = 9
+energy_range = 3

@@ -1,0 +1,18 @@
+# AutoDock Vina configuration file
+# Generated from: D:\learning\NR_new\项目进展_25年11月底\26年NR-Predictor\发给老师版本_from_Apr_7\五月投递\返稿\data_new\10_NRs\PDB\AR\Agonist\origin\1T63.pdb
+# Ligand: DHT in chain A
+
+receptor = receptor.pdbqt
+ligand = ligand.pdbqt
+
+center_x = -27.139
+center_y = 31.394
+center_z = 4.326
+
+size_x = 21.4
+size_y = 24.3
+size_z = 20.0
+
+exhaustiveness = 8
+num_modes = 9
+energy_range = 3
